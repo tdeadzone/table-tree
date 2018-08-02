@@ -347,7 +347,10 @@ body {
 .node-row-4-1 {
   width: 105px;
 }
-
+.node-row-4-1 .key{
+  height: 40px;
+  line-height: 40px;
+}
 .node-row-4-2 {
 }
 .node-row-4-3 {
