@@ -86,7 +86,7 @@ html, body {
 .wrap {
   width: 1060px;
   height: 550px;
-  margin: 0 auto;
+  margin: 50px auto 0;
   position: relative;
 }
 
