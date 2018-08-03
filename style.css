@@ -376,6 +376,9 @@ body {
 /* 第四行 0*/
 .node-row-4-1 {
   width: 105px;
+  top:275px;
+  left:20px;
+  position: absolute;
 }
 .node-row-4-1 .key {
   height: 40px;
@@ -387,6 +390,9 @@ body {
 }
 .node-row-4-2 {
   width: 104px;
+  top:275px;
+  left:143px;
+  position: absolute;
 }
 .node-row-4-2 .key {
   height: 40px;
@@ -398,6 +404,9 @@ body {
 }
 .node-row-4-3 {
   width: 104px;
+  top:275px;
+  left:270px;
+  position: absolute;
 }
 .node-row-4-3 .key {
   height: 40px;
@@ -409,6 +418,9 @@ body {
 }
 .node-row-4-4 {
   width: 105px;
+  top:275px;
+  left:400px;
+  position: absolute;
 }
 .node-row-4-4 .key {
   height: 40px;
@@ -420,6 +432,9 @@ body {
 }
 .node-row-4-5 {
   width: 105px;
+  top:275px;
+  left:545px;
+  position: absolute;
 }
 .node-row-4-5 .key {
   height: 40px;
@@ -431,6 +446,9 @@ body {
 }
 .node-row-4-6 {
   width: 105px;
+  top:275px;
+  left:775px;
+  position: absolute;
 }
 .node-row-4-6 .key {
   height: 40px;
@@ -442,6 +460,9 @@ body {
 }
 .node-row-4-7 {
   width: 105px;
+  top:275px;
+  left:925px;
+  position: absolute;
 }
 .node-row-4-7 .key {
   height: 40px;
@@ -456,6 +477,9 @@ body {
 /* 第五行 0*/
 .node-row-5-1 {
   width: 105px;
+  top:350px;
+  left:75px;
+  position: absolute;
 }
 .node-row-5-1 .key {
   height: 40px;
@@ -467,6 +491,9 @@ body {
 }
 .node-row-5-2 {
   width: 105px;
+  top:350px;
+  left:200px;
+  position: absolute;
 }
 .node-row-5-2 .key {
   height: 40px;
@@ -478,6 +505,9 @@ body {
 }
 .node-row-5-3 {
   width: 105px;
+  top:350px;
+  left:325px;
+  position: absolute;
 }
 .node-row-5-3 .key {
   height: 40px;
@@ -489,6 +519,9 @@ body {
 }
 .node-row-5-4 {
   width: 105px;
+  top:350px;
+  left:775px;
+  position: absolute;
 }
 .node-row-5-4 .key {
   height: 40px;
@@ -500,6 +533,9 @@ body {
 }
 .node-row-5-5 {
   width: 105px;
+  top:350px;
+  left:925px;
+  position: absolute;
 }
 .node-row-5-5 .key {
   height: 40px;
@@ -514,6 +550,9 @@ body {
 /* 第六行 0*/
 .node-row-6-1 {
   width: 105px;
+  top:436px;
+  left:75px;
+  position: absolute;
 }
 .node-row-6-1 .key {
   height: 40px;
@@ -525,6 +564,9 @@ body {
 }
 .node-row-6-2 {
   width: 105px;
+  top:436px;
+  left:200px;
+  position: absolute;
 }
 .node-row-6-2 .key {
   height: 40px;
@@ -536,6 +578,9 @@ body {
 }
 .node-row-6-3 {
   width: 105px;
+  top:436px;
+  left: 325px;
+  position: absolute;
 }
 .node-row-6-3 .key {
   height: 40px;
