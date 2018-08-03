@@ -136,7 +136,7 @@ body {
 }
 .wrap {
   width: 1060px;
-  height: 460px;
+  height: 550px;
   margin: 0 auto;
   position: relative;
   border: 1px solid #333;
@@ -175,25 +175,47 @@ body {
   position: absolute;
   background: url("./h-linktwo-3.png") no-repeat;
 }
-.v-linktwo-1 {
+.v-linktwo-1,.v-linktwo-1-2 {
   width: 6px;
   height: 126px;
+  top:255px;
+  left:770px;
+  position: absolute;
   background: url("./v-linktwo-1.png") no-repeat;
 }
-.v-linktwo-2 {
+.v-linktwo-1-2{
+  left: 919px;
+}
+
+.v-linktwo-2,.v-linktwo-2-2,.v-linktwo-2-3 {
   width: 6px;
   height: 141px;
+  top:340px;
+  left:70px;
+  position: absolute;
   background: url("./v-linktwo-2.png") no-repeat;
+}
+.v-linktwo-2-2{
+  left:195px;
+}
+.v-linktwo-2-3{
+  left:320px;
 }
 
 .h-linkthird-1 {
   width: 253px;
   height: 19px;
+  top:  255px;
+  left: 70px;
+  position: absolute;
   background: url("./h-linkthird-1.png") no-repeat;
 }
 .h-linkthird-2 {
   width: 219px;
   height: 20px;
+  top:255px;
+  left:380px;
+  position: absolute;
   background: url("./h-linkthird-2.png") no-repeat;
 }
 
@@ -423,8 +445,12 @@ body {
   position: absolute;
 }
 .node-row-4-4 .key {
-  height: 40px;
-  line-height: 40px;
+  /* height: 40px;
+  line-height: 40px; */
+}
+.node-row-4-4 .key-row-1,.node-row-4-4 .key-row-2{
+  height: 20px;
+  line-height: 20px;
 }
 .node-row-4-4 .value {
   height: 23px;
@@ -465,8 +491,12 @@ body {
   position: absolute;
 }
 .node-row-4-7 .key {
-  height: 40px;
-  line-height: 40px;
+  /* height: 40px;
+  line-height: 40px; */
+}
+.node-row-4-7 .key-row-1,.node-row-4-7 .key-row-2{
+  height: 20px;
+  line-height: 20px;
 }
 .node-row-4-7 .value {
   height: 23px;
@@ -538,8 +568,12 @@ body {
   position: absolute;
 }
 .node-row-5-5 .key {
-  height: 40px;
-  line-height: 40px;
+  /* height: 40px;
+  line-height: 40px; */
+}
+.node-row-5-5 .key-row-1,.node-row-5-5 .key-row-2{
+  height: 20px;
+  line-height: 20px;
 }
 .node-row-5-5 .value {
   height: 23px;
