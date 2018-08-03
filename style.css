@@ -1,89 +1,9 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -91,55 +11,83 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
-ol,
-ul {
+
+ol, ul {
   list-style: none;
 }
-blockquote,
-q {
+
+blockquote, q {
   quotes: none;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+
+blockquote:before, blockquote:after, q:before, q:after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
   border: none;
 }
+
+.w600 {
+  width: 600px;
+  overflow: scroll;
+  /* margin-left: 1300px; */
+}
+
+.icon-notice {
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  background: url("./icon-notice.png") no-repeat;
+}
+
+.notice-desc {
+  color: #fff;
+  max-width: 200px;
+  font-size: 12px;
+  z-index: 100;
+  opacity: 0.9;
+  position: absolute;
+  padding: 4px 6px;
+  background-color: #333;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 7px solid #333;
+  position: absolute;
+  left: 2px;
+  bottom: -7px;
+}
+
 .wrap {
   width: 1060px;
   height: 550px;
   margin: 0 auto;
   position: relative;
-  border: 1px solid #333;
 }
 
 .h-rootlink {
@@ -159,6 +107,7 @@ body {
   position: absolute;
   background: url("./h-linktwo-1.png") no-repeat;
 }
+
 .h-linktwo-2 {
   width: 142px;
   height: 20px;
@@ -167,6 +116,7 @@ body {
   position: absolute;
   background: url("./h-linktwo-2.png") no-repeat;
 }
+
 .h-linktwo-3 {
   width: 152px;
   height: 20px;
@@ -175,46 +125,51 @@ body {
   position: absolute;
   background: url("./h-linktwo-3.png") no-repeat;
 }
-.v-linktwo-1,.v-linktwo-1-2 {
+
+.v-linktwo-1, .v-linktwo-1-2 {
   width: 6px;
   height: 126px;
-  top:255px;
-  left:770px;
+  top: 255px;
+  left: 770px;
   position: absolute;
   background: url("./v-linktwo-1.png") no-repeat;
 }
-.v-linktwo-1-2{
+
+.v-linktwo-1-2 {
   left: 919px;
 }
 
-.v-linktwo-2,.v-linktwo-2-2,.v-linktwo-2-3 {
+.v-linktwo-2, .v-linktwo-2-2, .v-linktwo-2-3 {
   width: 6px;
   height: 141px;
-  top:340px;
-  left:70px;
+  top: 340px;
+  left: 70px;
   position: absolute;
   background: url("./v-linktwo-2.png") no-repeat;
 }
-.v-linktwo-2-2{
-  left:195px;
+
+.v-linktwo-2-2 {
+  left: 195px;
 }
-.v-linktwo-2-3{
-  left:320px;
+
+.v-linktwo-2-3 {
+  left: 320px;
 }
 
 .h-linkthird-1 {
   width: 253px;
   height: 19px;
-  top:  255px;
+  top: 255px;
   left: 70px;
   position: absolute;
   background: url("./h-linkthird-1.png") no-repeat;
 }
+
 .h-linkthird-2 {
   width: 219px;
   height: 20px;
-  top:255px;
-  left:380px;
+  top: 255px;
+  left: 380px;
   position: absolute;
   background: url("./h-linkthird-2.png") no-repeat;
 }
@@ -223,171 +178,240 @@ body {
   text-align: center;
   border: 1px solid #c3d7e8;
 }
+
 .key {
   font-size: 13px;
+  position: relative;
   background-color: #e5f0ff;
 }
+
 /* 第一行 0*/
+
 .node-row-1 {
   width: 140px;
   top: 20px;
   left: 508px;
   position: absolute;
 }
+
 .node-row-1 .key {
   height: 40px;
   line-height: 40px;
 }
+
 .node-row-1 .value {
   height: 23px;
   line-height: 23px;
 }
+
+.node-row-1 .icon-notice {
+  top: 13px;
+  right: 10px;
+  position: absolute;
+}
+
 /* 第一行 1*/
 
 /* 第二行 0*/
+
 .node-row-2-1 {
   width: 110px;
   top: 105px;
   left: 235px;
   position: absolute;
 }
+
 .node-row-2-1 .key {
   height: 40px;
   line-height: 40px;
 }
+
 .node-row-2-1 .value {
   height: 23px;
   line-height: 23px;
 }
+
 .node-row-2-2 {
   width: 105px;
   top: 105px;
   left: 525px;
   position: absolute;
 }
+
 .node-row-2-2 .key {
   height: 40px;
   line-height: 40px;
 }
+
+.node-row-2-2 .key .icon-notice {
+  top: 14px;
+  right: 2px;
+  position: absolute;
+}
+
 .node-row-2-2 .value {
   height: 23px;
   line-height: 23px;
 }
+
 .node-row-2-3 {
   width: 105px;
   top: 105px;
   right: 163px;
   position: absolute;
 }
+
 .node-row-2-3 .key {
   height: 40px;
   line-height: 40px;
 }
+
+.node-row-2-3 .key .icon-notice {
+  top: 14px;
+  right: 8px;
+  position: absolute;
+}
+
 .node-row-2-3 .value {
   height: 23px;
   line-height: 23px;
 }
+
 /* 第二行 1*/
 
 /* 第三行 0*/
+
 .node-row-3-1 {
   width: 105px;
   top: 190px;
   left: 145px;
   position: absolute;
 }
+
 .node-row-3-1 .key {
   height: 40px;
   line-height: 40px;
 }
+
 .node-row-3-1 .value {
   height: 23px;
   line-height: 23px;
 }
+
 .node-row-3-2 {
   width: 115px;
   top: 190px;
   left: 320px;
   position: absolute;
 }
+
 .node-row-3-2 .key {
   /* height: 40px;
   line-height: 40px; */
 }
+
 .node-row-3-2 .key-row-1 {
   height: 20px;
   line-height: 20px;
 }
+
 .node-row-3-2 .key-row-2 {
   height: 20px;
   line-height: 20px;
+}
+
+.node-row-3-2 .key-row-2 .icon-notice {
+  top: 4px;
+  right: 2px;
+  position: absolute;
 }
 
 .node-row-3-2 .value {
   height: 23px;
   line-height: 23px;
 }
+
 .node-row-3-3 {
   width: 105px;
   top: 190px;
   left: 455px;
   position: absolute;
 }
+
 .node-row-3-3 .key {
   height: 40px;
   line-height: 40px;
 }
+
 .node-row-3-3 .value {
   height: 23px;
   line-height: 23px;
 }
+
 .node-row-3-4 {
   width: 105px;
   top: 190px;
   left: 590px;
   position: absolute;
 }
+
 .node-row-3-4 .key {
   height: 40px;
   line-height: 40px;
 }
+
+.node-row-3-4 .key .icon-notice {
+  top: 13px;
+  right: 6px;
+  position: absolute;
+}
+
 .node-row-3-4 .value {
   height: 23px;
   line-height: 23px;
 }
+
 .node-row-3-5 {
   width: 105px;
   top: 190px;
   right: 238px;
   position: absolute;
 }
+
 .node-row-3-5 .key {
   height: 40px;
   line-height: 40px;
 }
+
 .node-row-3-5 .value {
   height: 23px;
   line-height: 23px;
 }
+
 .node-row-3-6 {
   width: 105px;
   top: 190px;
   /* right: 163px; */
-  right: 82px; /* 我是再chrome调试工具里面调试出来的值 */
+  right: 82px;
+  /* 我是再chrome调试工具里面调试出来的值 */
   position: absolute;
 }
+
 .node-row-3-6 .key {
   /* height: 40px; */
   /* line-height: 40px; */
 }
+
 .node-row-3-6 .key-row-1 {
   height: 20px;
   line-height: 20px;
 }
+
 .node-row-3-6 .key-row-2 {
   height: 20px;
   line-height: 20px;
 }
+
 .node-row-3-6 .value {
   height: 23px;
   line-height: 23px;
@@ -396,232 +420,295 @@ body {
 /* 第三行 1*/
 
 /* 第四行 0*/
+
 .node-row-4-1 {
   width: 105px;
-  top:275px;
-  left:20px;
+  top: 275px;
+  left: 20px;
   position: absolute;
 }
+
 .node-row-4-1 .key {
   height: 40px;
   line-height: 40px;
 }
+
 .node-row-4-1 .value {
   height: 23px;
   line-height: 23px;
 }
+
 .node-row-4-2 {
   width: 104px;
-  top:275px;
-  left:143px;
+  top: 275px;
+  left: 143px;
   position: absolute;
 }
+
 .node-row-4-2 .key {
   height: 40px;
   line-height: 40px;
 }
+
+.node-row-4-2 .key .icon-notice {
+  top: 14px;
+  right: 0;
+  position: absolute;
+}
+
 .node-row-4-2 .value {
   height: 23px;
   line-height: 23px;
 }
+
 .node-row-4-3 {
   width: 104px;
-  top:275px;
-  left:270px;
+  top: 275px;
+  left: 270px;
   position: absolute;
 }
+
 .node-row-4-3 .key {
   height: 40px;
   line-height: 40px;
 }
+
+.node-row-4-3 .key .icon-notice {
+  top: 13px;
+  right: -2px;
+  position: absolute;
+}
+
 .node-row-4-3 .value {
   height: 23px;
   line-height: 23px;
 }
+
 .node-row-4-4 {
   width: 105px;
-  top:275px;
-  left:400px;
+  top: 275px;
+  left: 400px;
   position: absolute;
 }
+
 .node-row-4-4 .key {
   /* height: 40px;
   line-height: 40px; */
 }
-.node-row-4-4 .key-row-1,.node-row-4-4 .key-row-2{
+
+.node-row-4-4 .key-row-1, .node-row-4-4 .key-row-2 {
   height: 20px;
   line-height: 20px;
 }
+
 .node-row-4-4 .value {
   height: 23px;
   line-height: 23px;
 }
+
 .node-row-4-5 {
   width: 105px;
-  top:275px;
-  left:545px;
+  top: 275px;
+  left: 545px;
   position: absolute;
 }
+
 .node-row-4-5 .key {
   height: 40px;
   line-height: 40px;
 }
+
 .node-row-4-5 .value {
   height: 23px;
   line-height: 23px;
 }
+
 .node-row-4-6 {
   width: 105px;
-  top:275px;
-  left:775px;
+  top: 275px;
+  left: 775px;
   position: absolute;
 }
+
 .node-row-4-6 .key {
   height: 40px;
   line-height: 40px;
 }
+
 .node-row-4-6 .value {
   height: 23px;
   line-height: 23px;
 }
+
 .node-row-4-7 {
   width: 105px;
-  top:275px;
-  left:925px;
+  top: 275px;
+  left: 925px;
   position: absolute;
 }
+
 .node-row-4-7 .key {
   /* height: 40px;
   line-height: 40px; */
 }
-.node-row-4-7 .key-row-1,.node-row-4-7 .key-row-2{
+
+.node-row-4-7 .key-row-1, .node-row-4-7 .key-row-2 {
   height: 20px;
   line-height: 20px;
 }
+
 .node-row-4-7 .value {
   height: 23px;
   line-height: 23px;
 }
+
 /* 第四行 1*/
 
 /* 第五行 0*/
+
 .node-row-5-1 {
   width: 105px;
-  top:350px;
-  left:75px;
+  top: 350px;
+  left: 75px;
   position: absolute;
 }
+
 .node-row-5-1 .key {
   height: 40px;
   line-height: 40px;
 }
+
 .node-row-5-1 .value {
   height: 23px;
   line-height: 23px;
 }
+
 .node-row-5-2 {
   width: 105px;
-  top:350px;
-  left:200px;
+  top: 350px;
+  left: 200px;
   position: absolute;
 }
+
 .node-row-5-2 .key {
   height: 40px;
   line-height: 40px;
 }
+
 .node-row-5-2 .value {
   height: 23px;
   line-height: 23px;
 }
+
 .node-row-5-3 {
   width: 105px;
-  top:350px;
-  left:325px;
+  top: 350px;
+  left: 325px;
   position: absolute;
 }
+
 .node-row-5-3 .key {
   height: 40px;
   line-height: 40px;
 }
+
 .node-row-5-3 .value {
   height: 23px;
   line-height: 23px;
 }
+
 .node-row-5-4 {
   width: 105px;
-  top:350px;
-  left:775px;
+  top: 350px;
+  left: 775px;
   position: absolute;
 }
+
 .node-row-5-4 .key {
   height: 40px;
   line-height: 40px;
 }
+
 .node-row-5-4 .value {
   height: 23px;
   line-height: 23px;
 }
+
 .node-row-5-5 {
   width: 105px;
-  top:350px;
-  left:925px;
+  top: 350px;
+  left: 925px;
   position: absolute;
 }
+
 .node-row-5-5 .key {
   /* height: 40px;
   line-height: 40px; */
 }
-.node-row-5-5 .key-row-1,.node-row-5-5 .key-row-2{
+
+.node-row-5-5 .key-row-1, .node-row-5-5 .key-row-2 {
   height: 20px;
   line-height: 20px;
 }
+
 .node-row-5-5 .value {
   height: 23px;
   line-height: 23px;
 }
+
 /* 第五行 1*/
 
 /* 第六行 0*/
+
 .node-row-6-1 {
   width: 105px;
-  top:436px;
-  left:75px;
+  top: 436px;
+  left: 75px;
   position: absolute;
 }
+
 .node-row-6-1 .key {
   height: 40px;
   line-height: 40px;
 }
+
 .node-row-6-1 .value {
   height: 23px;
   line-height: 23px;
 }
+
 .node-row-6-2 {
   width: 105px;
-  top:436px;
-  left:200px;
+  top: 436px;
+  left: 200px;
   position: absolute;
 }
+
 .node-row-6-2 .key {
   height: 40px;
   line-height: 40px;
 }
+
 .node-row-6-2 .value {
   height: 23px;
   line-height: 23px;
 }
+
 .node-row-6-3 {
   width: 105px;
-  top:436px;
+  top: 436px;
   left: 325px;
   position: absolute;
 }
+
 .node-row-6-3 .key {
   height: 40px;
   line-height: 40px;
 }
+
 .node-row-6-3 .value {
   height: 23px;
   line-height: 23px;
 }
+
 /* 第六行 1*/
