@@ -1,55 +1,6 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after, q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-
-.w600 {
-  width: 600px;
+.w770 {
+  width: 770px;
   overflow: scroll;
-  /* margin-left: 1300px; */
 }
 
 .icon-notice {
@@ -58,7 +9,7 @@ html, body {
   cursor: pointer;
   display: inline-block;
   vertical-align: middle;
-  background: url("./icon-notice.png") no-repeat;
+  background: url("http://n.sinaimg.cn/finance/dbfx/icon-notice.png") no-repeat;
 }
 
 .notice-desc {
@@ -70,6 +21,7 @@ html, body {
   position: absolute;
   padding: 4px 6px;
   background-color: #333;
+  z-index: 1000;
 }
 
 .arrow-down {
@@ -96,7 +48,7 @@ html, body {
   top: 83px;
   left: 289px;
   position: absolute;
-  background: url("./h-rootlink.png") no-repeat;
+  background: url("http://n.sinaimg.cn/finance/dbfx/h-rootlink.png") no-repeat;
 }
 
 .h-linktwo-1 {
@@ -105,7 +57,7 @@ html, body {
   top: 170px;
   left: 190px;
   position: absolute;
-  background: url("./h-linktwo-1.png") no-repeat;
+  background: url("http://n.sinaimg.cn/finance/dbfx/h-linktwo-1.png") no-repeat;
 }
 
 .h-linktwo-2 {
@@ -114,7 +66,7 @@ html, body {
   top: 170px;
   left: 504px;
   position: absolute;
-  background: url("./h-linktwo-2.png") no-repeat;
+  background: url("http://n.sinaimg.cn/finance/dbfx/h-linktwo-2.png") no-repeat;
 }
 
 .h-linktwo-3 {
@@ -123,7 +75,7 @@ html, body {
   top: 170px;
   left: 772px;
   position: absolute;
-  background: url("./h-linktwo-3.png") no-repeat;
+  background: url("http://n.sinaimg.cn/finance/dbfx/h-linktwo-3.png") no-repeat;
 }
 
 .v-linktwo-1, .v-linktwo-1-2 {
@@ -132,7 +84,7 @@ html, body {
   top: 255px;
   left: 770px;
   position: absolute;
-  background: url("./v-linktwo-1.png") no-repeat;
+  background: url("http://n.sinaimg.cn/finance/dbfx/v-linktwo-1.png") no-repeat;
 }
 
 .v-linktwo-1-2 {
@@ -145,7 +97,7 @@ html, body {
   top: 340px;
   left: 70px;
   position: absolute;
-  background: url("./v-linktwo-2.png") no-repeat;
+  background: url("http://n.sinaimg.cn/finance/dbfx/v-linktwo-2.png") no-repeat;
 }
 
 .v-linktwo-2-2 {
@@ -162,7 +114,7 @@ html, body {
   top: 255px;
   left: 70px;
   position: absolute;
-  background: url("./h-linkthird-1.png") no-repeat;
+  background: url("http://n.sinaimg.cn/finance/dbfx/h-linkthird-1.png") no-repeat;
 }
 
 .h-linkthird-2 {
@@ -171,7 +123,7 @@ html, body {
   top: 255px;
   left: 380px;
   position: absolute;
-  background: url("./h-linkthird-2.png") no-repeat;
+  background: url("http://n.sinaimg.cn/finance/dbfx/h-linkthird-2.png") no-repeat;
 }
 
 .node {
@@ -712,3 +664,35 @@ html, body {
 }
 
 /* 第六行 1*/
+.fullscreen-layer {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  position: fixed;
+  background-color: #fff;
+}
+.fullscreen-layer h1 {
+  left: 50%;
+  font-size: 20px;
+  width: 1060px;
+  margin-top: 2%;
+  margin-left: -530px;
+  position: absolute;
+}
+.fullscreen-layer h1 span {
+  margin-right: 20px;
+}
+.fullscreen-layer .wrap {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin-top: -275px;
+  margin-left: -530px;
+}
+.fullscreen-layer .close {
+  cursor: pointer;
+  margin-left: 56%;
+}

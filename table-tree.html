@@ -6,14 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>table-tree</title>
+  <link rel="stylesheet" href="./reset.css">
+  <!-- <link rel="stylesheet" href="http://n.sinaimg.cn/finance/dbfx/style.css?31231"> -->
   <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
   <!--25-->
   <!--25-->
-  <!-- <div class="w600"> -->
-  <div class="wrap">
+  <button id="fullscreen">fullscreen</button>
+  <div class="w770">
+  <div class="wrap" id="dbfx" data-fulldesc="万科A(sz000002)|2017-12-31">
 
     <div class="node node-row-1">
       <p class="key">净资产收益率<i class="icon-notice" data-role="notice" data-desc="归属母公司的净利润/归属母公司的平均股东权益合计*100%"></i></p>
@@ -147,101 +150,10 @@
       <p class="value">--</p>
     </div>
   </div>
-  <!-- </div> -->
+  </div>
 
-
-  <!-- <div class="arrow-down"></div> -->
-
-
-  <script>
-    ;
-    (function ($w, $d) {
-      var $notices =
-        $d.getElementsByTagName('i'),
-        $noticedesc = null,
-        i, noticeslen = $notices.length;
-
-      function getScroll(dir) {
-        if (dir === 'top') {
-          if (typeof pageYOffset != 'undefined') {
-            return pageYOffset;
-          } else {
-            var $body = document.body;
-            var $html = document.documentElement;
-            return (($html.clientHeight) ? $html : $body).scrollTop;
-          }
-        } else if (dir === 'left') {
-          if (typeof pageXOffset != 'undefined') {
-            return pageXOffset;
-          } else {
-            var $body = document.body;
-            var $html = document.documentElement;
-            return (($html.clientHeight) ? $html : $body).scrollLeft;
-          }
-        }
-      }
-
-      function getCoords($elem) {
-        var $box = $elem.getBoundingClientRect();
-
-        var pageYOffset = getScroll('top');
-        var pageXOffset = getScroll('left');
-        return {
-          top: $box.top + pageYOffset,
-          left: $box.left + pageXOffset
-        }
-      }
-
-      function setPosition(anchor, position, elem) {
-        var anchorCoords = getCoords(anchor), topMargin = -10;
-
-        switch (position) {
-          case "top":
-            elem.style.left = anchorCoords.left + "px";
-            elem.style.top = anchorCoords.top - elem.offsetHeight + topMargin + "px";
-            break;
-
-          case "right":
-            elem.style.left = anchorCoords.left + anchor.offsetWidth + "px";
-            elem.style.top = anchorCoords.top + "px";
-            break;
-
-          case "bottom":
-            elem.style.left = anchorCoords.left + "px";
-            elem.style.top = anchorCoords.top + anchor.offsetHeight + "px";
-            break;
-        }
-      }
-
-      function showNote($related, pos, htmlstr) {
-        $noticedesc = $d.createElement('div');
-
-        $noticedesc.innerHTML = '<div class="arrow-down"></div>' + htmlstr;
-        $noticedesc.className = "notice-desc";
-
-        document.body.appendChild($noticedesc);
-        setPosition($related, pos, $noticedesc);
-      }
-
-      function mouseenterhandler(evt) {
-        evt = evt || window.event;
-        var $dom = evt.target || evt.srcElement;
-        var clientRect = getCoords($dom);
-        showNote($dom, 'top', $dom.getAttribute('data-desc'));
-      }
-
-      function mouseleavehandler(evt) {
-        document.body.removeChild($noticedesc);
-      }
-
-      for (i = 0; i < noticeslen; i += 1) {
-        if ($notices[i] && $notices[i].getAttribute('data-role')) {
-          $notices[i].onmouseenter = mouseenterhandler;
-          $notices[i].onmouseleave = mouseleavehandler;
-        }
-      }
-    }(window, document))
-  </script>
+  <!-- <script src="http://n.sinaimg.cn/finance/dbfx/dbfx.js"></script> -->
+  <script src="./dbfx.js"></script>
 </body>
 
 </html>
